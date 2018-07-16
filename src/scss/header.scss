@@ -1,0 +1,25 @@
+@import "variables";
+
+.header{
+  background-color: $header-background;
+  color: $header-text;
+  height: 100px;
+  width: 100%;
+  .title{
+    font-size: 70px;
+    float: left;
+    font-family: $header-font;
+    margin-left:15px;
+    position: absolute;
+    top: 5px;
+  }
+  .hamburger-menu{
+    float:right;
+    margin-right: 15px;
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+  }
+}

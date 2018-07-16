@@ -1,0 +1,34 @@
+@import "variables";
+
+
+.smilies{
+  font-family: $subheading-font;
+  font-size: 30px;
+  text-align: center;
+  .text{
+    margin-top: 20px;
+  }
+  .row{
+    color: #8c8c8c;
+    font-size: 70px;
+    margin-top: 10px;
+    .icon{
+      padding: 10px;
+      &.happy{
+        &:hover{
+          color: $green-face;
+        }
+      }
+      &.okay{
+        &:hover{
+          color: $amber-face;
+        }
+      }
+      &.sad{
+        &:hover{
+          color: $red-face;
+        }
+      }
+    }
+  }
+}
