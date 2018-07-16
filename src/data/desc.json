@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "happy",
+    "description" : "I'm feeling pretty good today!"
+  },
+  {
+    "name": "okay",
+    "description" : "I've been better"
+  },
+  {
+    "name": "sad",
+    "description" : "I'm feeling really low today"
+  }
+]

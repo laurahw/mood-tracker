@@ -1,12 +1,11 @@
 @import "variables";
 
-
 .smilies{
-  font-family: $subheading-font;
-  font-size: 30px;
-  text-align: center;
   .text{
+    font-family: $subheading-font;
+    font-size: 30px;
     margin-top: 20px;
+    text-align: center;
   }
   .row{
     color: #8c8c8c;
@@ -30,5 +29,9 @@
         }
       }
     }
+  }
+
+  .description{
+    font-family: $body-font;
   }
 }
