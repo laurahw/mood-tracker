@@ -1,11 +1,12 @@
 @import "variables";
 
 .smilies{
+
+  text-align: center;
   .text{
     font-family: $subheading-font;
     font-size: 30px;
     margin-top: 20px;
-    text-align: center;
   }
   .row{
     color: #8c8c8c;
@@ -13,25 +14,25 @@
     margin-top: 10px;
     .icon{
       padding: 10px;
-      &.happy{
-        &:hover{
-          color: $green-face;
-        }
+      &.happy:hover,
+      &.happy0{
+        color: $green-face;
       }
-      &.okay{
-        &:hover{
+
+      &.okay:hover,
+      &.okay1{
           color: $amber-face;
-        }
       }
-      &.sad{
-        &:hover{
+      &.sad:hover,
+      &.sad2{
           color: $red-face;
-        }
+
       }
     }
   }
 
   .description{
     font-family: $body-font;
+    font-size: 20px;
   }
 }

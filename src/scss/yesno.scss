@@ -1,0 +1,18 @@
+@import 'variables';
+
+.yes-no{
+  padding: 20px;
+  .question{
+    span{
+      font-size: 20px;
+      margin-bottom: 10px;
+      display: block;
+      font-family: $subheading-font;
+
+    }
+
+    .toggle{
+      text-align: center;
+    }
+  }
+}
