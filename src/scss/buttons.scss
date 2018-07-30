@@ -1,0 +1,28 @@
+@import 'variables';
+
+
+.standard-button{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 40px;
+  height: 50px;
+  background-color: $header-background;
+  color: $header-text;
+  font-family: $subheading-font;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+
+  span{
+    position: absolute;
+    left: 0;
+    top: 7.5px;
+    width: 100%;
+  }
+
+  &:hover{
+    background-color: $header-text;
+    color: $header-background;
+  }
+}

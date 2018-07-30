@@ -19,6 +19,7 @@ class Smilies extends Component {
 
   clickHandler(num){
       this.setState({descriptionText:  descriptions[num].description, activeFace: num})
+      this.props.setSmiley(num)
   }
 
   render() {

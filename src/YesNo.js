@@ -3,50 +3,25 @@ import Toggle from 'react-toggle'
 
 
 class YesNo extends Component {
-  constructor(){
-    super()
+
+  constructor(props){
+    super(props)
+    this.handleClick = this.handleClick.bind(this)
     this.state = {
-      drinking: false,
-      exercised: false ,
+      hungry: false,
       tired: false,
-      hungry: false
+      exercised: false,
+      drinking: false
     }
   }
 
-  handleChange(event) {
 
-    if(event === 'drinking'){
-      this.setState(
-        {
-          drinking: !this.state.drinking
-        }
-      )
-    }
-    if(event === 'exercise'){
-      this.setState(
-        {
-          exercised: !this.state.exercised
-        }
-      )
-    }
-
-    if(event === 'tired'){
-      this.setState(
-        {
-          tired: !this.state.tired
-        }
-      )
-    }
-
-    if(event === 'hungry'){
-      this.setState(
-        {
-          hungry: !this.state.hungry
-        }
-      )
-    }
-
+  handleClick(value){
+    console.log('test')
+    console.log(this.props)
+    this.props.handleChange(value)
   }
+
   render() {
     return (
       <div className="yes-no">
@@ -55,8 +30,8 @@ class YesNo extends Component {
             <span>Have you been drinking in the last 24 hours?</span>
             <div className="toggle">
               <Toggle
-                defaultChecked={this.state.drinking}
-                onChange={() => this.handleChange('drinking')}/>
+                defaultChecked={this.props.drinking}
+                onChange={() => this.handleClick('drinking')}/>
             </div>
           </div>
 
@@ -64,8 +39,8 @@ class YesNo extends Component {
             <span>Have you exercised in the last 24 hours?</span>
             <div className="toggle">
               <Toggle
-                defaultChecked={this.state.exercised}
-                onChange={() => this.handleChange('exercise')}/>
+                defaultChecked={this.props.exercised}
+                onChange={() => this.handleClick('exercise')}/>
             </div>
           </div>
 
@@ -73,8 +48,8 @@ class YesNo extends Component {
             <span>Are you tired?</span>
             <div className="toggle">
               <Toggle
-                defaultChecked={this.state.tired}
-                onChange={() => this.handleChange('tired')}/>
+                defaultChecked={this.props.tired}
+                onChange={() => this.handleClick('tired')}/>
             </div>
           </div>
 
@@ -82,8 +57,8 @@ class YesNo extends Component {
             <span>Are you hungry?</span>
             <div className="toggle">
               <Toggle
-                defaultChecked={this.state.hungry}
-                onChange={() => this.handleChange('hungry')}/>
+                defaultChecked={this.props.hungry}
+                onChange={() => this.handleClick('hungry')}/>
             </div>
           </div>
 
